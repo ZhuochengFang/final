@@ -1,36 +1,35 @@
 \section{正文}
 
-\subsection{一级标题}
+\subsection{动态放大器及典型结构综述}
 
-这是一个引用示例\cite{vaswani2017attention}。
+\subsubsection{动态放大器基本机理}
 
-这是一个图片示例，如图\ref{fig:grpovsppo}所示。
+动态放大器通常工作在离散时间多相时钟下。在采样相位，输入信号被存储到采样电容；在放大相位，电荷通过放大核心与反馈网络再分配，形成输出增量。与静态 OTA 相比，其本质差异在于“瞬态增益”替代“持续偏置增益”。这使其在低占空比系统中具有天然能效优势，但也使性能更依赖时序与寄生条件。
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.8\textwidth]{doc_thesis/figs/04/grpovsppo.png}
-    \caption{\ptheadingfont{这是一张图}}
-    \label{fig:grpovsppo}
-\end{figure}
+从系统角度看，动态放大器适合用于开关电容积分器、离散时间噪声整形环路和低带宽高分辨数据转换器。典型优势可概括为：(1) 静态功耗极低；(2) 电路结构与数字时钟协同紧密；(3) 在中低带宽下具有较高功耗性能比。对应不足包括：(1) 对时钟相位误差敏感；(2) 动态节点误差源复杂；(3) 低电压下工作区间受限，易出现线性退化。
 
-这是一个列表示例。
+\subsubsection{FIA：浮动反相放大器}
 
-\begin{itemize}
-    \item 项目1
-    \item 项目2
-\end{itemize}
+FIA（Floating Inverter Amplifier）利用 CMOS 反相器作为高跨导核心，通过“浮动”工作方式在放大相位获得较高等效增益。该结构在近年低功耗 ADC 与 CDC 研究中被广泛采用\cite{wang2021sefiamod,lin2022lvfia,tang2020zoomcdc}。其价值在于能以较低能耗换取较高放大效率，但工程上需重点控制共模变化、时钟耦合与开关注入带来的增益波动。
 
-这是一个表格示例，如表\ref{tab:exp}所示。
+\subsubsection{SEFIA：摆幅增强型 FIA}
 
-\begin{table}[htbp]
-    \centering
-    \caption{\ptheadingfont{这是一个表格}}
-    \label{tab:exp}
-    \begin{tabular}{|c|c|c|}
-        \hline
-        x & xx & xxx \\
-        \hline
-        xxx & xx & x \\
-        \hline
-    \end{tabular}
-\end{table}
+SEFIA（Swing-Enhanced FIA）可视为对 FIA 的摆幅与线性增强。其主要思路是通过结构与时序协同，扩大有效线性工作区并缓解大信号条件下的压缩失真。相关研究表明，SEFIA 在微瓦级功耗条件下能够有效支持高分辨离散时间调制器前端\cite{wang2021sefiamod}。但这类结构通常引入更复杂的相位控制与版图约束，对实现一致性提出更高要求。
+
+\subsubsection{LVFIA：低压浮动反相放大器}
+
+LVFIA 面向亚 1.2V 乃至更低供电环境，核心目标是在有限电压余量内维持可接受的增益与线性\cite{lin2022lvfia}。其关键挑战包括：(1) 过驱动电压不足导致跨导退化；(2) 输入/输出摆幅收缩导致动态范围受限；(3) 器件和开关非理想在低压下占比上升。典型解决路径是将 LVFIA 与共模管理、相位优化和系统校正协同设计，而非仅在单一电路层面做局部补偿。
+
+\subsection{CLS 技术及其在动态放大器中的作用}
+
+\subsubsection{CLS 基本思想}
+
+相关电平移位（CLS）强调在相关时钟相位内执行受控电平平移，使部分误差在后续环路中可被抑制。与“固定偏置式 level shifting”相比，CLS 更关注误差相关性管理。在动态放大器场景中，CLS 常用于改善低压条件下的有效工作区间，降低共模漂移引发的增益与线性波动\cite{hu2022mashcls,meng2023jssc_mash,liu2020pingpongcls}。
+
+\subsubsection{CR-CLS 的进一步发展}
+
+在湿度传感 CDC 前端中，Li 等提出 CR-CLS（Charge-Redistribution CLS）FIA\cite{li2024crcls}。该方法将电平移位直接嵌入电荷再分配过程，相比常规 CLS-FIA 在宽温区与极端工艺角下提升开环增益并降低闭环误差映射。该工作与 VCO-based Zoom CDC 协同，实现了低功耗、高精度与面积效率的平衡，显示了 CLS 从“电路技巧”向“系统协同模块”演进的趋势。
+
+\subsection{本研究的技术定位}
+
+综合已有研究可以看出，动态放大器路线的核心矛盾是“高能效”与“高鲁棒”并存：前者依赖极简偏置与高瞬态效率，后者要求对时序、寄生和失配具备稳定容限。本文的研究定位即围绕该矛盾展开：在低压条件下，以 LVFIA 为基础，引入 CLS 机制改善关键误差通道，并在系统级场景下评估其对线性、噪声和功耗的综合收益，为后续高能效传感读出与数据转换前端提供可复用设计方法。
