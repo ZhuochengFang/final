@@ -1,0 +1,67 @@
+\documentclass[a4paper, twoside, final, noblind]{iseebachelor}
+%-----------------------------------------------------------------
+% global information
+%-----------------------------------------------------------------
+\newcommand{\StudentName}{张三}
+\newcommand{\StudentID}{3220106666}
+\newcommand{\Supervisor}{李四 教授}
+\newcommand{\Grade}{2022级}
+\newcommand{\Major}{电子科学与技术}
+\newcommand{\College}{信息与电子工程学院}
+\newcommand{\ProjectName}{这是课题题目}
+%-----------------------------------------------------------------
+% main doc
+%-----------------------------------------------------------------
+\begin{document}
+% 目录
+\makecover
+\startcontents[thesis]
+\startcontents[threeinone]
+\stopcontents[threeinone]
+% 原创性声明
+\pagestyle{infoPage}
+\include{doc_thesis/contents/01_Statement}
+% 致谢
+\include{doc_thesis/contents/02_Acknowledgments}
+% 摘要
+\include{doc_thesis/contents/03_Abstract}
+% 目录页
+\newpage
+\pagestyle{indexPage}
+\ZJUPrintCombinedTOC
+% \vspace{12pt}\noindent {\CJKfamily{simhei}\fontsize{12bp}{18bp}\bfseries \hspace{0.36em}《浙江大学本科生文献综述和开题报告考核表》}\vspace{6pt}
+% 正文字体设置
+\globalmainfont
+% 正文部分
+\includepdf[pages=-]{doc_thesis/contents/Part1_Pagination.pdf}
+\pagestyle{mainPage}
+\ZJUSetupThesisHeading
+\include{doc_thesis/contents/04_Main}
+% 任务书
+\thispagestyle{blankPage}
+\include{doc_thesis/contents/05_Task}
+\thispagestyle{blankPage}
+\include{doc_thesis/contents/06_Eval}
+\stopcontents[thesis]
+%-----------------------------------------------------------------
+% main doc for 3-in-1 part
+%-----------------------------------------------------------------
+\ifthenelse{\boolean{myfull}}{
+  \clearpage
+  \resumecontents[threeinone]
+  \begin{ThreeInOnePart}
+    \includepdf[pages=-]{doc_thesis/contents/Part2_Pagination.pdf}
+    \globalmainfont
+    \newpage
+    \thispagestyle{trinfoPage}
+    \include{doc_3in1/contents/00_Info}
+    \pagestyle{mainPage}
+    \include{doc_3in1/contents/01_Review}
+    \include{doc_3in1/contents/02_Report}
+    \include{doc_3in1/contents/03_Translate}
+    \include{doc_3in1/contents/04_TransOriginal}
+    \include{doc_3in1/contents/05_Eval}
+  \end{ThreeInOnePart}
+  \stopcontents[threeinone]
+}{}
+\end{document}
