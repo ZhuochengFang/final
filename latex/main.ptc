@@ -33,85 +33,27 @@
 \contentsline {part}{第一部分\hspace {1em}毕业论文（设计）}{1}{section*.2}%
 \contentsline {section}{\numberline {1}绪论}{1}{section.3}%
 \contentsline {subsection}{\numberline {1.1}研究背景与意义}{1}{subsection.4}%
-\contentsline {subsection}{\numberline {1.2}动态放大器及典型结构发展}{1}{subsection.5}%
-\contentsline {subsubsection}{\numberline {1.2.1}动态放大器基本原理}{1}{subsubsection.6}%
-\contentsline {subsubsection}{\numberline {1.2.2}浮动反相放大器（FIA）}{2}{subsubsection.7}%
-\contentsline {subsubsection}{\numberline {1.2.3}摆幅增强型FIA（SEFIA）}{2}{subsubsection.8}%
-\contentsline {subsubsection}{\numberline {1.2.4}LVFIA：低压浮动反相放大器}{2}{subsubsection.9}%
-\contentsline {subsection}{\numberline {1.3}CLS 技术引入与理论动机}{3}{subsection.10}%
-\contentsline {subsubsection}{\numberline {1.3.1}CLS 的基本思想}{3}{subsubsection.11}%
-\contentsline {subsubsection}{\numberline {1.3.2}CLS 与 FIA/LVFIA 的耦合优势}{3}{subsubsection.12}%
-\contentsline {subsection}{\numberline {1.4}国内外研究现状与趋势}{3}{subsection.13}%
-\contentsline {subsection}{\numberline {1.5}现有问题与研究挑战}{4}{subsection.14}%
-\contentsline {subsection}{\numberline {1.6}本文研究内容与技术路线}{4}{subsection.15}%
-\contentsline {subsection}{\numberline {1.7}论文结构安排}{4}{subsection.16}%
-\contentsline {section}{\numberline {2}正文}{5}{section.17}%
-\contentsline {subsection}{\numberline {2.1}一级标题}{5}{subsection.18}%
-\contentsline {section}{\numberline {3}结论}{5}{section.21}%
-\contentsline {subsection}{\numberline {3.1}一级标题}{5}{subsection.22}%
-\contentsline {sectionnoid}{参考文献}{7}{section*.24}%
-\contentsline {sectionnoid}{附录}{8}{section*.25}%
-\contentsline {section}{\numberline {A}附录一级标题}{8}{appendix.26}%
-\contentsline {subsection}{\numberline {A.1}附录二级标题}{8}{subsection.27}%
-\contentsline {sectionnoid}{作者简历}{9}{section*.28}%
+\contentsline {section}{\numberline {2}动态放大器与相关电平移位技术}{2}{section.5}%
+\contentsline {subsection}{\numberline {2.1}动态放大器基本机理}{2}{subsection.6}%
+\contentsline {subsection}{\numberline {2.2}FIA：浮动反相放大器}{3}{subsection.8}%
+\contentsline {subsection}{\numberline {2.3}SEFIA：摆幅增强型 FIA}{3}{subsection.10}%
+\contentsline {subsection}{\numberline {2.4}LVFIA：低压浮动反相放大器}{5}{subsection.12}%
+\contentsline {subsection}{\numberline {2.5}CLS技术及其在动态放大器中的作用}{6}{subsection.13}%
+\contentsline {subsubsection}{\numberline {2.5.1}CLS基本思想}{6}{subsubsection.14}%
+\contentsline {subsubsection}{\numberline {2.5.2}CR-CLS的进一步发展}{6}{subsubsection.15}%
+\contentsline {subsection}{\numberline {2.6}本研究的技术定位}{6}{subsection.16}%
+\contentsline {section}{\numberline {3}结论}{7}{section.21}%
+\contentsline {subsection}{\numberline {3.1}一级标题}{7}{subsection.22}%
+\contentsline {sectionnoid}{参考文献}{9}{section*.24}%
+\contentsline {sectionnoid}{附录}{10}{section*.25}%
+\contentsline {section}{\numberline {A}附录一级标题}{10}{appendix.26}%
+\contentsline {subsection}{\numberline {A.1}附录二级标题}{10}{subsection.27}%
+\contentsline {sectionnoid}{作者简历}{11}{section*.28}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {sectionnoiddot}{《本科生毕业论文（设计）任务书》}{10}{section*.29}%
+\contentsline {sectionnoiddot}{《本科生毕业论文（设计）任务书》}{12}{section*.29}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
-\contentsline {sectionnoiddot}{《本科生毕业论文（设计）考核表》}{11}{section*.30}%
-\gdef \the@ipfilectr {}
-\ttl@stoptoc {thesis@1}
-\ttl@starttoc {threeinone@1}
-\ttl@change@i {\@ne }{trsection}{2em}{\CJKfamily {simhei}\bfseries \setfont {-4}{1.5}}{\contentslabel {2em}}{}{\titlerule *[0.5pc]{$\cdot $}\contentspage }\relax 
-\ttl@change@v {trsection}{}{}{}\relax 
-\ttl@change@i {\@ne }{trsubsection}{2.5em}{\setfont {-4}{1.5}}{\contentslabel {1em}}{}{\titlerule *[0.5pc]{$\cdot $}\contentspage }\relax 
-\ttl@change@v {trsubsection}{}{}{}\relax 
-\ttl@change@i {\@ne }{trsubsubsection}{4.5em}{\setfont {-4}{1.5}}{\contentslabel {1.83em}}{}{\titlerule *[0.5pc]{$\cdot $}\contentspage }\relax 
-\ttl@change@v {trsubsubsection}{}{}{}\relax 
-\ttl@change@i {\@ne }{trparagraph}{5.5em}{\setfont {-4}{1.5}}{\contentslabel {2.67em}}{}{\titlerule *[0.5pc]{$\cdot $}\contentspage }\relax 
-\ttl@change@v {trparagraph}{}{}{}\relax 
-\ttl@change@i {\@ne }{trsectionnoiddot}{0em}{\CJKfamily {simhei}\bfseries \setfont {-4}{1.5}}{}{}{}\relax 
-\ttl@change@v {trsectionnoiddot}{}{}{}\relax 
-\gdef \the@ipfilectr {@-7}
-\contentsline {part}{第二部分\hspace {1em}文献综述和开题报告}{13}{section*.32}%
-\contentsline {sectionnoiddot}{指导教师对文献综述和开题报告具体内容要求}{13}{section*.33}%
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-8}
-\contentsline {section}{\numberline {A}文献综述}{1}{appendix.34}%
-\contentsline {subsection}{\numberline {1}章的标题}{1}{subsection.35}%
-\contentsline {subsubsection}{\numberline {1.1}节的标题}{1}{subsubsection.36}%
-\contentsline {paragraph}{\numberline {1.1.1}小标题}{1}{paragraph.37}%
-\contentsline {subsection}{\numberline {2}国内外研究现状}{2}{subsection.38}%
-\contentsline {subsubsection}{\numberline {2.1}研究方向及进展}{2}{subsubsection.39}%
-\contentsline {subsubsection}{\numberline {2.2}存在问题}{2}{subsubsection.40}%
-\contentsline {subsection}{\numberline {3}研究展望}{3}{subsection.41}%
-\contentsline {subsection}{\numberline {4}参考文献}{4}{subsection.45}%
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-9}
-\contentsline {section}{\numberline {B}开题报告}{5}{appendix.46}%
-\contentsline {subsection}{\numberline {1}问题提出的背景}{5}{subsection.47}%
-\contentsline {subsubsection}{\numberline {1.1}背景介绍}{5}{subsubsection.48}%
-\contentsline {paragraph}{\numberline {1.1.1}小标题}{5}{paragraph.49}%
-\contentsline {subsubsection}{\numberline {1.2}本研究的目的和意义}{5}{subsubsection.50}%
-\contentsline {subsection}{\numberline {2}论文的主要内容和技术路线}{7}{subsection.51}%
-\contentsline {subsubsection}{\numberline {2.1}主要研究内容}{7}{subsubsection.52}%
-\contentsline {subsubsection}{\numberline {2.2}技术路线}{7}{subsubsection.53}%
-\contentsline {subsubsection}{\numberline {2.3}可行性分析}{7}{subsubsection.54}%
-\contentsline {subsection}{\numberline {3}研究计划进度安排及预期目标}{8}{subsection.55}%
-\contentsline {subsubsection}{\numberline {3.1}进度安排}{8}{subsubsection.56}%
-\contentsline {subsubsection}{\numberline {3.2}预期目标}{8}{subsubsection.57}%
-\contentsline {subsection}{\numberline {4}参考文献}{9}{subsection.59}%
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-10}
-\setcounter {tocdepth}{1}
-\contentsline {section}{\numberline {C}外文翻译}{11}{appendix.60}%
-\setcounter {tocdepth}{3}
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-11}
-\contentsline {section}{\numberline {D}外文原文}{13}{appendix.61}%
-\gdef \the@ipfilectr {}
-\gdef \the@ipfilectr {@-12}
-\contentsline {sectionnoiddot}{《浙江大学本科生文献综述和开题报告考核表》}{16}{section*.62}%
+\contentsline {sectionnoiddot}{《本科生毕业论文（设计）考核表》}{13}{section*.30}%
 \gdef \the@ipfilectr {}
 \contentsfinish 

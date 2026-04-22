@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{1}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -11,44 +11,8 @@
   \let\eprint\href
 \fi
 
-\bibitem[Wang et~al.(2021)]{wang2021sefiamod}
-WANG X, et~al.
-\newblock A 4-$\mu$w bandwidth/power scalable delta-sigma modulator based on swing-enhanced floating inverter amplifiers\allowbreak[J].
-\newblock IEEE Journal of Solid-State Circuits, 2021, 56\allowbreak (11): 3463-3474.
-
-\bibitem[Lin et~al.(2022)]{lin2022lvfia}
-LIN C~H, et~al.
-\newblock A sub-1-v 90 db-sndr power-bw scalable dtdsm using low-voltage cascoded floating inverter amplifiers in 130 nm cmos\allowbreak[J].
-\newblock IEEE Journal of Solid-State Circuits, 2022, 57\allowbreak (9): 2722-2734.
-
-\bibitem[Meng et~al.(2023)]{meng2023jssc_mash}
-MENG S, et~al.
-\newblock A 1.2-v 2.87-$\mu$w 94.0-db sndr discrete-time 2-0 mash delta-sigma adc\allowbreak[J/OL].
-\newblock IEEE Journal of Solid-State Circuits, 2023, 58\allowbreak (6): 1584-1596.
-\newblock DOI: \doi{10.1109/JSSC.2022.3208144}.
-
-\bibitem[Hu et~al.(2022)]{hu2022mashcls}
-HU Y, et~al.
-\newblock A 2.87$\mu$w 1khz-bw 94.0db-sndr 2-0 mash adc using fia with dynamic-body-biasing assisted cls technique\allowbreak[C/OL]//\allowbreak
-2022 IEEE International Solid-State Circuits Conference (ISSCC).
-\newblock IEEE, 2022: 1-3.
-\newblock DOI: \doi{10.1109/ISSCC42614.2022.9731544}.
-
-\bibitem[Liu et~al.(2020)]{liu2020pingpongcls}
-LIU Y, et~al.
-\newblock Ping-pong operated inverter-based ota using correlated level shifting technique\allowbreak[C/OL]//\allowbreak
-2020 IEEE 15th International Conference on Solid-State and Integrated Circuit Technology (ICSICT).
-\newblock IEEE, 2020: 1-3.
-\newblock DOI: \doi{10.1109/ICSICT49897.2020.9278332}.
-
-\bibitem[Ye et~al.(2025)]{ye2025ctcls}
-YE H, et~al.
-\newblock A rail-to-rail 3rd-order noise-shaping sar adc achieving 105.4db sfdr with integrated input buffer using continuous-time correlated level shifting\allowbreak[C/OL]//\allowbreak
-2025 IEEE International Solid-State Circuits Conference (ISSCC).
-\newblock IEEE, 2025: 1-3.
-\newblock DOI: \doi{10.1109/ISSCC49661.2025.10904773}.
-
-\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin]{vaswani2017attention}
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
 VASWANI A, SHAZEER N, PARMAR N, et~al.
 \newblock Attention is all you need\allowbreak[J].
 \newblock Advances in neural information processing systems, 2017, 30.

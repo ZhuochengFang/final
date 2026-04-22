@@ -1,0 +1,91 @@
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[Tang et~al.(2020)Tang, Li, Yang, Shen, Zhao, Williams, Liu, Tan, Hall,
+  Pan, and Sun]{tang2020zoomcdc}
+TANG X, LI S, YANG X, et~al.
+\newblock An energy-efficient time-domain incremental zoom
+  capacitance-to-digital converter\allowbreak[J/OL].
+\newblock IEEE Journal of Solid-State Circuits, 2020, 55\allowbreak (11):
+  3064-3075.
+\newblock DOI: \doi{10.1109/JSSC.2020.3005812}.
+
+\bibitem[Li et~al.(2021)Li, Tan, Bao, Xiao, Zhang, Du, Shen, Ru, Zhang, Ye, and
+  Huang]{li2021humidityarray}
+LI H, TAN Z, BAO Y, et~al.
+\newblock Energy-efficient cmos humidity sensors using adaptive range-shift
+  zoom cdc and power-aware floating inverter amplifier array\allowbreak[J/OL].
+\newblock IEEE Journal of Solid-State Circuits, 2021, 56\allowbreak (12):
+  3560-3572.
+\newblock DOI: \doi{10.1109/JSSC.2021.3114189}.
+
+\bibitem[Li et~al.(2024)Li, Du, Bao, Dong, Ru, Xiao, Zhang, Wang, Zhong, Shen,
+  Ye, and Huang]{li2024crcls}
+LI H, DU K, BAO Y, et~al.
+\newblock A 0.39-mm$^2$ stacked standard-cmos humidity sensor using a
+  charge-redistribution correlated level shifting floating inverter amplifier
+  and a vco-based zoom cdc\allowbreak[J/OL].
+\newblock IEEE Journal of Solid-State Circuits, 2024, 59\allowbreak (2):
+  435-448.
+\newblock DOI: \doi{10.1109/JSSC.2023.3307427}.
+
+\bibitem[Wang et~al.(2021)]{wang2021sefiamod}
+WANG X, et~al.
+\newblock A 4-$\mu$w bandwidth/power scalable delta-sigma modulator based on
+  swing-enhanced floating inverter amplifiers\allowbreak[J].
+\newblock IEEE Journal of Solid-State Circuits, 2021, 56\allowbreak (11):
+  3463-3474.
+
+\bibitem[Meng et~al.(2023)Meng, Hu, Zhao, Qu, Ye, Zhao, and
+  Tan]{meng2023jssc_mash}
+MENG L, HU Y, ZHAO Y, et~al.
+\newblock A 1.2-v 2.87-$\mu$w 94.0-db sndr discrete-time 2-0 mash delta-sigma
+  adc\allowbreak[J/OL].
+\newblock IEEE Journal of Solid-State Circuits, 2023, 58\allowbreak (6):
+  1636-1645.
+\newblock DOI: \doi{10.1109/JSSC.2022.3208144}.
+
+\bibitem[Tang et~al.(2020)Tang, Yang, Zhao, Hsu, Liu, Shen, Mukherjee, Shi,
+  Pan, and Sun]{tang2020ns_sar}
+TANG X, YANG X, ZHAO W, et~al.
+\newblock A 13.5b-enob second-order noise-shaping sar with pvt-robust
+  closed-loop dynamic amplifier\allowbreak[C/OL]//\allowbreak
+2020 IEEE International Solid-State Circuits Conference (ISSCC).
+\newblock IEEE, 2020: 162-164.
+\newblock DOI: \doi{10.1109/ISSCC19947.2020.9063058}.
+
+\bibitem[Hu et~al.(2022)Hu, Zhao, Qu, Ye, Zhao, and Tan]{hu2022mashcls}
+HU Y, ZHAO Y, QU W, et~al.
+\newblock A 2.87$\mu$w 1khz-bw 94.0db-sndr 2-0 mash adc using fia with
+  dynamic-body-biasing assisted cls technique\allowbreak[C/OL]//\allowbreak
+2022 IEEE International Solid-State Circuits Conference (ISSCC).
+\newblock 2022: 410-412.
+\newblock DOI: \doi{10.1109/ISSCC42614.2022.9731544}.
+
+\bibitem[Wu et~al.(2020)Wu, Tan, Xie, Zhang, and Ye]{liu2020pingpongcls}
+WU T, TAN Z, XIE N, et~al.
+\newblock Ping-pong operated inverter-based ota using correlated level shifting
+  technique\allowbreak[C/OL]//\allowbreak
+2020 IEEE 15th International Conference on Solid-State \& Integrated Circuit
+  Technology (ICSICT).
+\newblock IEEE, 2020: 1-4.
+\newblock DOI: \doi{10.1109/ICSICT49897.2020.9278332}.
+
+\bibitem[Lin et~al.(2022)]{lin2022lvfia}
+LIN C~H, et~al.
+\newblock A sub-1-v 90 db-sndr power-bw scalable dtdsm using low-voltage
+  cascoded floating inverter amplifiers in 130 nm cmos\allowbreak[J].
+\newblock IEEE Journal of Solid-State Circuits, 2022, 57\allowbreak (9):
+  2722-2734.
+
+\end{thebibliography}

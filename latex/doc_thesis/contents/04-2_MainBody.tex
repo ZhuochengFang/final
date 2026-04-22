@@ -1,35 +1,198 @@
-\section{正文}
 
-\subsection{动态放大器及典型结构综述}
 
-\subsubsection{动态放大器基本机理}
+\section{动态放大器与相关电平移位技术}
+\subsection{动态放大器基本机理}
+动态放大器通常工作在离散时间多相时钟下。
+在复位相位，输入信号被存储到采样电容，电源给储能电容充电；在放大相位，
+输入信号接入动态放大器，同时电源断开，而由储能电容给工作晶体管供电，形成瞬态增益。
+下图展示了一个基本动态放大器的原理图和时序示例。
+与静态 OTA 相比，其本质差异在于“瞬态增益”替代“持续偏置增益”。
+这使其在低占空比系统中具有天然能效优势，但也使性能更依赖时序与寄生条件。
 
-动态放大器通常工作在离散时间多相时钟下。在采样相位，输入信号被存储到采样电容；在放大相位，电荷通过放大核心与反馈网络再分配，形成输出增量。与静态 OTA 相比，其本质差异在于“瞬态增益”替代“持续偏置增益”。这使其在低占空比系统中具有天然能效优势，但也使性能更依赖时序与寄生条件。
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{doc_thesis/figs/04/基本动态放大器.png}
+    \caption{\ptheadingfont{基本动态放大器的原理图和时序图}}
+    \label{fig:grpovsppo}
+\end{figure}
 
-从系统角度看，动态放大器适合用于开关电容积分器、离散时间噪声整形环路和低带宽高分辨数据转换器。典型优势可概括为：(1) 静态功耗极低；(2) 电路结构与数字时钟协同紧密；(3) 在中低带宽下具有较高功耗性能比。对应不足包括：(1) 对时钟相位误差敏感；(2) 动态节点误差源复杂；(3) 低电压下工作区间受限，易出现线性退化。
 
-\subsubsection{FIA：浮动反相放大器}
+从系统角度看，动态放大器适合用于开关电容积分器、
+离散时间噪声整形环路和低带宽高分辨数据转换器。
+典型优势可概括为：(1) 静态功耗极低；(2) 电路结构与数字时钟协同紧密；
+(3) 在中低带宽下具有较高功耗性能比。
+对应不足包括：(1) 对时钟相位误差敏感；(2) 动态节点误差源复杂；
+(3) 低电压下工作区间受限，易出现线性退化。
 
-FIA（Floating Inverter Amplifier）利用 CMOS 反相器作为高跨导核心，通过“浮动”工作方式在放大相位获得较高等效增益。该结构在近年低功耗 ADC 与 CDC 研究中被广泛采用\cite{wang2021sefiamod,lin2022lvfia,tang2020zoomcdc}。其价值在于能以较低能耗换取较高放大效率，但工程上需重点控制共模变化、时钟耦合与开关注入带来的增益波动。
+\subsection{FIA：浮动反相放大器}
+传统的的动态放大器需要额外设计共模电压检测器，增加了电路结构复杂度，同时也有
+增益不高，PVT稳定性不足的问题。
+FIA（Floating Inverter Amplifier）利用 CMOS 反相器作为高跨导核心，
+通过“浮动”工作方式在放大相位获得较高等效增益。
+FIA同样存在复位（Reset）和放大（Amplification）两个阶段，
+复位时由电源给负载电容充电，放大时负载电容放电形成动态电流进行放大。
+基本动态放大器不同，FIA由于对称的结构设计和开关分布，
+使得其不需要添加额外的共模电压检测部分以切断静态电流，
+在放大阶放电完毕后静态电流自然消失，有着更出色的共模抑制能力。
+该结构在近年低功耗 ADC 与 CDC 研究中被广泛采用
+\cite{wang2021sefiamod,lin2022lvfia,tang2020zoomcdc}。
+其价值在于能以较低能耗换取较高放大效率，
+但工程上需重点控制共模变化、时钟耦合与开关注入带来的增益波动。
 
-\subsubsection{SEFIA：摆幅增强型 FIA}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{doc_thesis/figs/04/FIA.png}
+    \caption{\ptheadingfont{FIA的原理图和时序图}}
+    \label{fig:grpovsppo}
+\end{figure}
 
-SEFIA（Swing-Enhanced FIA）可视为对 FIA 的摆幅与线性增强。其主要思路是通过结构与时序协同，扩大有效线性工作区并缓解大信号条件下的压缩失真。相关研究表明，SEFIA 在微瓦级功耗条件下能够有效支持高分辨离散时间调制器前端\cite{wang2021sefiamod}。但这类结构通常引入更复杂的相位控制与版图约束，对实现一致性提出更高要求。
+\subsection{SEFIA：摆幅增强型 FIA}
 
-\subsubsection{LVFIA：低压浮动反相放大器}
+SEFIA（Swing-Enhanced FIA）可视为对 FIA 的摆幅与线性增强。
+其主要思路是通过结构与时序协同，
+扩大有效线性工作区并缓解大信号条件下的压缩失真。
+在普通的浮动反相放大器FIA中，由于从VDD到VSS之间存在PMOS和NMOS晶体管堆叠，
+这限制了模拟放大器的输出电压摆幅。而在SEFIA中，采用了自动归零技术，
+使得PMOS和NMOS分别采用了独立的偏置电压，
+这样的设计提高了放大器的线性输出摆幅，不过作为代价，
+由于PMOS和NMOS中间跨接了一个电容器CI，电源电压相比于FIA要更大一些，
+这使得SEFIA难以满足低供电电压条件下的应用。
+相关研究表明，SEFIA 在微瓦级功耗条件下能够有效支持高分辨
+离散时间调制器前端\cite{wang2021sefiamod}。
+但这类结构通常引入更复杂的相位控制与版图约束，对实现一致性提出更高要求。
 
-LVFIA 面向亚 1.2V 乃至更低供电环境，核心目标是在有限电压余量内维持可接受的增益与线性\cite{lin2022lvfia}。其关键挑战包括：(1) 过驱动电压不足导致跨导退化；(2) 输入/输出摆幅收缩导致动态范围受限；(3) 器件和开关非理想在低压下占比上升。典型解决路径是将 LVFIA 与共模管理、相位优化和系统校正协同设计，而非仅在单一电路层面做局部补偿。
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{doc_thesis/figs/04/SEFIA.png}
+    \caption{\ptheadingfont{SEFIA的原理图和时序图}}
+    \label{fig:grpovsppo}
+\end{figure}
+根据上述分析，目前已有的动态放大器设计分别存在一些不足。
+FIA 结构虽然能在低功耗条件下提供较高增益，但其输入共模范围和输出摆幅受限，导致线性性能下降；
+SEFIA 通过增加偏置电压提升线性，但这使其难以适应亚 1.2V 的低压环境；
+两者都对时钟抖动和非重叠时序敏感，缺乏有效的误差抑制机制。
+如何设计一种低供电电压、高动态范围、高增益和精度的动态放大器以适用于物联网、传感器、生物医药领域的应用，
+是本论文重点探讨的课题。
+\subsection{LVFIA：低压浮动反相放大器}
 
-\subsection{CLS 技术及其在动态放大器中的作用}
+LVFIA 面向亚 1.2V 乃至更低供电环境，
+核心目标是在有限电压余量内维持可接受的增益与线性\cite{lin2022lvfia}。
+分析电路可知，在一般FIA和SEFIA的基础上，图中所示的LVFIA电路同样使用了
+CRES作为储能电容，在初始化阶段时由电源对其充电，
+放大阶段时电容放电偏置晶体管；同时对称的电路结构以及负载电容CL的设置
+确保了电路不需要额外共模反馈，在复位阶段能自动稳定到共模电压VCM。
+具体改进的部分包含以下几点：其一，LVFIA在SEFIA的基础上，
+去掉了浮空电容CI并舍弃了推挽的电路结构，将每个晶体管的偏置回路物理分离，
+例如由图1中可见给每个PMOS都设置了独立的VSS，给每个NMOS都设置了独立的VDD，
+这样做最直接且重要的影响就是解除了偏置时PMOS和NMOS之间电压关系的耦合性，
+晶体管不再堆叠而给电源电压造成负担，降低了对电源电压大小的要求；
+其二，在FIA和SEFIA的两相操作（复位阶段、放大阶段）的基础上，
+LVFIA引入了三相操作，在复位阶段和放大阶段的中间加入放电和自归零阶段
+（auto zero），在这一阶段通过电容CC1和CC2放电建立了PMOS和NMOS晶体管的
+偏置电压VBP和VBN，并且由于此时PMOS和NMOS的栅极和漏极直接相连，
+形成了一个二极管（Diode）结构，所以达到稳态后两者的栅源电压VGS很大程度上
+和电源电压无关，这一点保证了即使电源电压有波动的情况下放大器偏置点仍然保持稳定，
+消除了失调电压。总结来说，LVFIA的电路结构在FIA和SEFIA的基础上，
+物理隔离了各个晶体管的偏置回路，去掉了浮空电容CI，
+消除了晶体管堆叠对电源电压造成的抬升；同时引入自归零相，
+在该阶段实现了对晶体管的稳定偏置，减少电源电压波动造成的偏置点的偏移。
+\par
+然而对于LVFIA来说，其在低压条件下的增益和线性仍然受限，尤其在输入共模电压接近电源轨时，增益会显著下降。
+一种解决方法是引入Cascode结构以提升增益，但这会增加电路复杂度和功耗，同时
+Cascode结构的引入也会增加对电源电压的要求，降低电路的适用范围。
+因此，如何在保持LVFIA低压适应性的同时提升其增益和线性，是本论文后续研究的重点之一。
 
-\subsubsection{CLS 基本思想}
+\subsection{CLS技术及其在动态放大器中的作用}
 
-相关电平移位（CLS）强调在相关时钟相位内执行受控电平平移，使部分误差在后续环路中可被抑制。与“固定偏置式 level shifting”相比，CLS 更关注误差相关性管理。在动态放大器场景中，CLS 常用于改善低压条件下的有效工作区间，降低共模漂移引发的增益与线性波动\cite{hu2022mashcls,meng2023jssc_mash,liu2020pingpongcls}。
+\subsubsection{CLS基本思想}
 
-\subsubsection{CR-CLS 的进一步发展}
+相关电平移位（CLS）强调在相关时钟相位内执行受控电平平移，
+使部分误差在后续环路中可被抑制。
+与“固定偏置式 level shifting”相比，CLS 更关注误差相关性管理。
+在动态放大器场景中，CLS 常用于改善低压条件下的有效工作区间，
+降低共模漂移引发的增益与线性波动\cite{hu2022mashcls,meng2023jssc_mash,liu2020pingpongcls}。
 
-在湿度传感 CDC 前端中，Li 等提出 CR-CLS（Charge-Redistribution CLS）FIA\cite{li2024crcls}。该方法将电平移位直接嵌入电荷再分配过程，相比常规 CLS-FIA 在宽温区与极端工艺角下提升开环增益并降低闭环误差映射。该工作与 VCO-based Zoom CDC 协同，实现了低功耗、高精度与面积效率的平衡，显示了 CLS 从“电路技巧”向“系统协同模块”演进的趋势。
+\subsubsection{CR-CLS的进一步发展}
+
+在湿度传感 CDC 前端中，Li 等提出 CR-CLS（Charge-Redistribution CLS）
+FIA\cite{li2024crcls}。该方法将电平移位直接嵌入电荷再分配过程，
+相比常规 CLS-FIA 在宽温区与极端工艺角下提升开环增益并降低闭环误差映射。
+该工作与 VCO-based Zoom CDC 协同，实现了低功耗、高精度与面积效率的平衡，
+显示了 CLS 从“电路技巧”向“系统协同模块”演进的趋势。
 
 \subsection{本研究的技术定位}
 
-综合已有研究可以看出，动态放大器路线的核心矛盾是“高能效”与“高鲁棒”并存：前者依赖极简偏置与高瞬态效率，后者要求对时序、寄生和失配具备稳定容限。本文的研究定位即围绕该矛盾展开：在低压条件下，以 LVFIA 为基础，引入 CLS 机制改善关键误差通道，并在系统级场景下评估其对线性、噪声和功耗的综合收益，为后续高能效传感读出与数据转换前端提供可复用设计方法。
+综合已有研究可以看出，
+动态放大器路线的核心矛盾是“高能效”与“高鲁棒”并存：
+前者依赖极简偏置与高瞬态效率，后者要求对时序、寄生和失配具备稳定容限。
+本文的研究定位即围绕该矛盾展开：在低压条件下，以 LVFIA 为基础，
+引入 CLS 机制改善关键误差通道，
+并在系统级场景下评估其对线性、噪声和功耗的综合收益，
+为后续高能效传感读出与数据转换前端提供可复用设计方法。
+
+
+
+
+这是一个图片示例，如图\ref{fig:grpovsppo}所示。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{doc_thesis/figs/04/LVFIA.png}
+    \caption{\ptheadingfont{LVFIA}}
+    \label{fig:grpovsppo}
+\end{figure}
+
+这是一个列表示例。
+
+\begin{itemize}
+    \item 项目1
+    \item 项目2
+\end{itemize}
+
+这是一个表格示例，如表\ref{tab:exp}所示。
+
+\begin{table}[htbp]
+    \centering
+    \caption{\ptheadingfont{这是一个表格}}
+    \label{tab:exp}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        x & xx & xxx \\
+        \hline
+        xxx & xx & x \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \caption{\ptheadingfont{开环动态放大器的增益随电压变化（单位：dB）}}
+    \label{tab:exp}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+         & 0.8 & 0.7 &0.6 &0.5 \\
+        \hline
+        40 & 47.7 & 47.1 & 46.3 & 45.0 \\
+        \hline
+        -80 & 48.4 & 47.8 & 46.8 & 44.6\\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[htbp]
+    \centering
+    \caption{\ptheadingfont{闭环动态放大器的增益随反馈电容值变化（单位：dB）}}
+    \label{tab:exp}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+         & 100 & 10 &1 &0.1 \\
+        \hline
+        40 & 46.0 & 43.4 & 30.2 & - \\
+        \hline
+        -80 & 46.3 & 43.3 & 28.9 & - \\
+        \hline
+    \end{tabular}
+\end{table}
+
+

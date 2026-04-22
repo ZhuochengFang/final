@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "LaTeX: 一键编译(main)",
+      "type": "shell",
+      "command": "xelatex -interaction=nonstopmode -halt-on-error main.tex; $runBibtexForAux = { param($dir) if (Test-Path $dir) { Get-ChildItem -Path $dir -Filter '*.aux' -File | ForEach-Object { if (Select-String -Path $_.FullName -Pattern '\\\\bibdata\\{|\\\\bibstyle\\{' -Quiet) { $base = $_.FullName.Substring((Get-Location).Path.Length + 1) -replace '\\\\','/' -replace '\\.aux$',''; bibtex \"$base\" } } } }; & $runBibtexForAux 'doc_thesis/contents'; & $runBibtexForAux 'doc_3in1/contents'; xelatex -interaction=nonstopmode -halt-on-error main.tex; xelatex -interaction=nonstopmode -halt-on-error main.tex",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "focus": false,
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
