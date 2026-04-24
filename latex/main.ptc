@@ -38,22 +38,28 @@
 \contentsline {subsection}{\numberline {2.2}FIA：浮动反相放大器}{3}{subsection.8}%
 \contentsline {subsection}{\numberline {2.3}SEFIA：摆幅增强型 FIA}{3}{subsection.10}%
 \contentsline {subsection}{\numberline {2.4}LVFIA：低压浮动反相放大器}{5}{subsection.12}%
-\contentsline {subsection}{\numberline {2.5}CLS技术及其在动态放大器中的作用}{6}{subsection.13}%
-\contentsline {subsubsection}{\numberline {2.5.1}CLS基本思想}{6}{subsubsection.14}%
-\contentsline {subsubsection}{\numberline {2.5.2}CR-CLS的进一步发展}{6}{subsubsection.15}%
-\contentsline {subsection}{\numberline {2.6}本研究的技术定位}{6}{subsection.16}%
-\contentsline {section}{\numberline {3}结论}{7}{section.21}%
-\contentsline {subsection}{\numberline {3.1}一级标题}{7}{subsection.22}%
-\contentsline {sectionnoid}{参考文献}{9}{section*.24}%
-\contentsline {sectionnoid}{附录}{10}{section*.25}%
-\contentsline {section}{\numberline {A}附录一级标题}{10}{appendix.26}%
-\contentsline {subsection}{\numberline {A.1}附录二级标题}{10}{subsection.27}%
-\contentsline {sectionnoid}{作者简历}{11}{section*.28}%
+\contentsline {subsection}{\numberline {2.5}CLS技术及其在动态放大器中的作用}{7}{subsection.15}%
+\contentsline {subsubsection}{\numberline {2.5.1}CLS基本思想}{7}{subsubsection.16}%
+\contentsline {subsubsection}{\numberline {2.5.2}CLS基本原理}{7}{subsubsection.17}%
+\contentsline {subsubsection}{\numberline {2.5.3}CLS执行过程}{7}{subsubsection.18}%
+\contentsline {subsubsection}{\numberline {2.5.4}CLS变化}{7}{subsubsection.19}%
+\contentsline {subsubsection}{\numberline {2.5.5}CLS应用}{8}{subsubsection.20}%
+\contentsline {subsection}{\numberline {2.6}本研究的目的与定位}{8}{subsection.21}%
+\contentsline {section}{\numberline {3}所提出的动态放大器设计}{8}{section.25}%
+\contentsline {subsection}{\numberline {3.1}电路的拓扑设计}{9}{subsection.27}%
+\contentsline {subsection}{\numberline {3.2}增益提升}{10}{subsection.28}%
+\contentsline {section}{\numberline {4}结论}{12}{section.34}%
+\contentsline {subsection}{\numberline {4.1}一级标题}{12}{subsection.35}%
+\contentsline {sectionnoid}{参考文献}{13}{section*.37}%
+\contentsline {sectionnoid}{附录}{14}{section*.38}%
+\contentsline {section}{\numberline {A}附录一级标题}{14}{appendix.39}%
+\contentsline {subsection}{\numberline {A.1}附录二级标题}{14}{subsection.40}%
+\contentsline {sectionnoid}{作者简历}{15}{section*.41}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {sectionnoiddot}{《本科生毕业论文（设计）任务书》}{12}{section*.29}%
+\contentsline {sectionnoiddot}{《本科生毕业论文（设计）任务书》}{16}{section*.42}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
-\contentsline {sectionnoiddot}{《本科生毕业论文（设计）考核表》}{13}{section*.30}%
+\contentsline {sectionnoiddot}{《本科生毕业论文（设计）考核表》}{17}{section*.43}%
 \gdef \the@ipfilectr {}
 \contentsfinish 

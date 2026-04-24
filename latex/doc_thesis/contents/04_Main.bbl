@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -81,11 +81,46 @@ WU T, TAN Z, XIE N, et~al.
 \newblock IEEE, 2020: 1-4.
 \newblock DOI: \doi{10.1109/ICSICT49897.2020.9278332}.
 
-\bibitem[Lin et~al.(2022)]{lin2022lvfia}
-LIN C~H, et~al.
-\newblock A sub-1-v 90 db-sndr power-bw scalable dtdsm using low-voltage
+\bibitem[Wu et~al.(2025)Wu, Liu, Zhu, Yu, Tan, and Tang]{wu2025lvfia}
+WU X, LIU Y, ZHU Z, et~al.
+\newblock A sub-1 v 90 db-sndr power/bw scalable dtdsm using low-voltage
   cascoded floating inverter amplifiers in 130 nm cmos\allowbreak[J].
-\newblock IEEE Journal of Solid-State Circuits, 2022, 57\allowbreak (9):
-  2722-2734.
+\newblock IEEE Transactions on Circuits and Systems I: Regular Papers, 2025,
+  72\allowbreak (5): 1976-1986.
+
+\bibitem[Essam et~al.(2010)Essam, Dessouky, and Zekry]{essam2010twophasecls}
+ESSAM A, DESSOUKY M, ZEKRY A.
+\newblock Two-phase correlated level shifting switched-capacitor
+  techniques\allowbreak[C/OL]//\allowbreak
+2010 International Conference on Microelectronics (ICM).
+\newblock 2010: 17-19.
+\newblock DOI: \doi{10.1109/ICM.2010.5696109}.
+
+\bibitem[Hung et~al.(2016)Hung and Kuo]{hung2016averagingcls}
+HUNG T~C, KUO T~H.
+\newblock A 4.86 mw 15-bit 22.5 ms/s pipelined adc with 74 db sndr in 90 nm
+  cmos using averaging correlated level shifting
+  technique\allowbreak[C/OL]//\allowbreak
+2016 IEEE Asian Solid-State Circuits Conference (A-SSCC).
+\newblock 2016: 161-164.
+\newblock DOI: \doi{10.1109/ASSCC.2016.7844160}.
+
+\bibitem[Kumar et~al.(2022)Kumar, Krishnapura, and
+  Banerjee]{kumar2022cascodedfia}
+KUMAR R~S~A, KRISHNAPURA N, BANERJEE P.
+\newblock Analysis and design of a discrete-time delta-sigma modulator using a
+  cascoded floating-inverter-based dynamic amplifier\allowbreak[J/OL].
+\newblock IEEE Journal of Solid-State Circuits, 2022, 57\allowbreak (11):
+  3384-3395.
+\newblock DOI: \doi{10.1109/JSSC.2022.3171790}.
+
+\bibitem[Ye et~al.(2025)Ye, Cui, Gao, Li, Zhang, Huang, and Shen]{ye202518}
+YE S, CUI J, GAO J, et~al.
+\newblock 18.5 a rail-to-rail 3rd-order noise-shaping sar adc achieving 105.4
+  db sfdr with integrated input buffer using continuous-time correlated level
+  shifting\allowbreak[C/OL]//\allowbreak
+2025 IEEE International Solid-State Circuits Conference (ISSCC): Vol.~68.
+\newblock IEEE, 2025: 314-316.
+\newblock DOI: \doi{10.1109/ISSCC49661.2025.10904773}.
 
 \end{thebibliography}

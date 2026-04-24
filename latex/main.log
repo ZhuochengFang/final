@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.7)  22 APR 2026 20:14
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.7)  24 APR 2026 22:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -839,15 +839,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (./doc_thesis/contents/02_Acknowledgments.aux)
 (./doc_thesis/contents/03_Abstract.aux) (./doc_thesis/contents/04_Main.aux
 
-LaTeX Warning: Label `fig:grpovsppo' multiply defined.
-
-
-LaTeX Warning: Label `fig:grpovsppo' multiply defined.
-
-
-LaTeX Warning: Label `fig:grpovsppo' multiply defined.
-
-
 LaTeX Warning: Label `tab:exp' multiply defined.
 
 
@@ -1165,41 +1156,59 @@ File: doc_thesis/figs/04/SEFIA.png Graphic file (type bmp)
 
 
 [4]
+File: doc_thesis/figs/04/LVFIA.png Graphic file (type bmp)
+<doc_thesis/figs/04/LVFIA.png>
+File: doc_thesis/figs/04/基于LVFIA的积分器.png Graphic file (type bmp)
+<doc_thesis/figs/04/基于LVFIA的积分器.png>
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [5]
-File: doc_thesis/figs/04/LVFIA.png Graphic file (type bmp)
-<doc_thesis/figs/04/LVFIA.png>
 
-Underfull \vbox (badness 1859) has occurred while \output is active []
-
-
-
-[6]) (./doc_thesis/contents/04-3_Conclution.tex
-
-Package natbib Warning: Citation `vaswani2017attention' on page 7 undefined on 
-input line 2.
-
-) (./doc_thesis/contents/04-4_Appendix.tex
+[6]
 
 [7]
+File: doc_thesis/figs/04/the_proposed_circuit.png Graphic file (type bmp)
+<doc_thesis/figs/04/the_proposed_circuit.png>
 
-[8
 
-] (./doc_thesis/contents/04_Main.bbl)
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [9]
+File: doc_thesis/figs/04/复位.png Graphic file (type bmp)
+<doc_thesis/figs/04/复位.png>
+File: doc_thesis/figs/04/初步放大.png Graphic file (type bmp)
+<doc_thesis/figs/04/初步放大.png>
+File: doc_thesis/figs/04/电平移位.png Graphic file (type bmp)
+<doc_thesis/figs/04/电平移位.png>
+) (./doc_thesis/contents/04-3_Conclution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[10]))
 
-[11]
+
+[10]
+
+[11]) (./doc_thesis/contents/04-4_Appendix.tex
+
+[12] (./doc_thesis/contents/04_Main.bbl)
+
+[13
+
+]
+
+[14]))
+
+[15]
 \openout2 = `doc_thesis/contents/05_Task.aux'.
 
  (./doc_thesis/contents/05_Task.tex)
 
-[12
+[16
 
 
 
@@ -1215,7 +1224,7 @@ Overfull \hbox (4.80602pt too wide) in paragraph at lines 28--39
 
 )
 
-[13
+[17
 
 
 
@@ -1225,11 +1234,7 @@ Overfull \hbox (4.80602pt too wide) in paragraph at lines 28--39
 \tf@ptc=\write4
 \openout4 = `main.ptc'.
 
-
-
-Package natbib Warning: There were undefined citations.
-
-(./main.aux (./doc_thesis/contents/01_Statement.aux)
+ (./main.aux (./doc_thesis/contents/01_Statement.aux)
 (./doc_thesis/contents/02_Acknowledgments.aux)
 (./doc_thesis/contents/03_Abstract.aux) (./doc_thesis/contents/04_Main.aux)
 (./doc_thesis/contents/05_Task.aux) (./doc_thesis/contents/06_Eval.aux))
@@ -1242,15 +1247,15 @@ L3 programming layer <2022/07/14>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 84E3A141BE95FA6ADFF1CC581D27CC78;1223.
+(rerunfilecheck)             Checksum: 9B79C4B871C7803035CB281E1A67C7F4;1366.
  ) 
 Here is how much of TeX's memory you used:
- 22589 strings out of 473832
- 493471 string characters out of 5733159
- 877440 words of memory out of 5000000
- 45183 multiletter control sequences out of 15000+600000
- 573515 words of font info for 155 fonts, out of 8000000 for 9000
+ 22670 strings out of 473832
+ 496682 string characters out of 5733159
+ 881109 words of memory out of 5000000
+ 45260 multiletter control sequences out of 15000+600000
+ 573507 words of font info for 154 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,17n,125p,1224b,655s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (20 pages).
+Output written on main.pdf (24 pages).
