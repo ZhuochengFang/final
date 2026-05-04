@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.7)  28 APR 2026 17:55
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.7)  3 MAY 2026 15:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1137,27 +1137,39 @@ Underfull \vbox (badness 3735) has occurred while \output is active []
 
 
 ]) (./doc_thesis/contents/04-2_MainBody.tex
-File: doc_thesis/figs/04/基本动态放大器.png Graphic file (type bmp)
-<doc_thesis/figs/04/基本动态放大器.png>
-
-Underfull \vbox (badness 1867) has occurred while \output is active []
+Underfull \vbox (badness 1281) has occurred while \output is active []
 
 
 
 [2]
-File: doc_thesis/figs/04/FIA.png Graphic file (type bmp)
-<doc_thesis/figs/04/FIA.png>
-
-Underfull \vbox (badness 1748) has occurred while \output is active []
-
+File: doc_thesis/figs/04/基本动态放大器.png Graphic file (type bmp)
+<doc_thesis/figs/04/基本动态放大器.png>
 
 
 [3]
-File: doc_thesis/figs/04/SEFIA.png Graphic file (type bmp)
-<doc_thesis/figs/04/SEFIA.png>
+File: doc_thesis/figs/04/FIA.png Graphic file (type bmp)
+<doc_thesis/figs/04/FIA.png>
 
 
 [4]
+File: doc_thesis/figs/04/SEFIA.png Graphic file (type bmp)
+<doc_thesis/figs/04/SEFIA.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[7]
 File: doc_thesis/figs/04/LVFIA.png Graphic file (type bmp)
 <doc_thesis/figs/04/LVFIA.png>
 File: doc_thesis/figs/04/LVFIA_timing.png Graphic file (type bmp)
@@ -1165,27 +1177,22 @@ File: doc_thesis/figs/04/LVFIA_timing.png Graphic file (type bmp)
 File: doc_thesis/figs/04/基于LVFIA的积分器.png Graphic file (type bmp)
 <doc_thesis/figs/04/基于LVFIA的积分器.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-[5]
-
-[6]
+[8]
 File: doc_thesis/figs/04/CLS阶段1.png Graphic file (type bmp)
 <doc_thesis/figs/04/CLS阶段1.png>
 File: doc_thesis/figs/04/CLS阶段2.png Graphic file (type bmp)
 <doc_thesis/figs/04/CLS阶段2.png>
 
 
-[7]
+[9]
+
+[10]
 File: doc_thesis/figs/04/the_proposed_circuit.png Graphic file (type bmp)
 <doc_thesis/figs/04/the_proposed_circuit.png>
 
 
-[8]
-
-[9]
+[11]
 File: doc_thesis/figs/04/复位.png Graphic file (type bmp)
 <doc_thesis/figs/04/复位.png>
 File: doc_thesis/figs/04/初步放大.png Graphic file (type bmp)
@@ -1194,56 +1201,56 @@ File: doc_thesis/figs/04/电平移位.png Graphic file (type bmp)
 <doc_thesis/figs/04/电平移位.png>
 
 
-[10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[12]
 
-
-
-[11]
+[13]
 File: doc_thesis/figs/04/多个CLS.png Graphic file (type bmp)
 <doc_thesis/figs/04/多个CLS.png>
 
+Underfull \vbox (badness 2469) has occurred while \output is active []
 
-[12]
+
+
+[14]
+
+[15]
 File: doc_thesis/figs/04/LVFIA_schematic.png Graphic file (type bmp)
 <doc_thesis/figs/04/LVFIA_schematic.png>
 File: doc_thesis/figs/04/LVFIA_model.png Graphic file (type bmp)
 <doc_thesis/figs/04/LVFIA_model.png>
 File: doc_thesis/figs/04/模拟开关.png Graphic file (type bmp)
 <doc_thesis/figs/04/模拟开关.png>
-
-
-[13]
 File: doc_thesis/figs/04/pvt_open_loop_gain.png Graphic file (type bmp)
 <doc_thesis/figs/04/pvt_open_loop_gain.png>
 
 
-[14]
+[16]
+
+[17]
 File: doc_thesis/figs/04/cls_closed_loop_gain.png Graphic file (type bmp)
 <doc_thesis/figs/04/cls_closed_loop_gain.png>
 File: doc_thesis/figs/04/瞬态仿真下有无CLS对比.png Graphic file (type bmp)
 <doc_thesis/figs/04/瞬态仿真下有无CLS对比.png>
 ) (./doc_thesis/contents/04-3_Conclution.tex
-Underfull \vbox (badness 1910) has occurred while \output is active []
 
-
-
-[15]) (./doc_thesis/contents/04-4_Appendix.tex
-
-[16] (./doc_thesis/contents/04_Main.bbl)
-
-[17
-
-]
-
-[18]))
+[18]) (./doc_thesis/contents/04-4_Appendix.tex
 
 [19]
+
+[20
+
+] (./doc_thesis/contents/04_Main.bbl)
+
+[21]
+
+[22]))
+
+[23]
 \openout2 = `doc_thesis/contents/05_Task.aux'.
 
  (./doc_thesis/contents/05_Task.tex)
 
-[20
+[24
 
 
 
@@ -1259,7 +1266,7 @@ Overfull \hbox (4.80602pt too wide) in paragraph at lines 28--39
 
 )
 
-[21
+[25
 
 
 
@@ -1282,15 +1289,15 @@ L3 programming layer <2022/07/14>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3FB22122F13D5C9487525BF9B854A40E;1453.
+(rerunfilecheck)             Checksum: 4BA3624C7586683AB9861A931785AE71;1349.
  ) 
 Here is how much of TeX's memory you used:
- 22838 strings out of 473832
- 504850 string characters out of 5733159
- 881735 words of memory out of 5000000
- 45416 multiletter control sequences out of 15000+600000
+ 22836 strings out of 473832
+ 504785 string characters out of 5733159
+ 881794 words of memory out of 5000000
+ 45414 multiletter control sequences out of 15000+600000
  573523 words of font info for 156 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,17n,125p,1224b,657s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,17n,125p,1225b,657s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (29 pages).
+Output written on main.pdf (33 pages).
