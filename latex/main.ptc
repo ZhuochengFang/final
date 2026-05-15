@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {1.1}研究背景与意义}{1}{subsection.4}%
 \contentsline {section}{\numberline {2}动态放大器与相关电平移位技术}{3}{section.5}%
 \contentsline {subsection}{\numberline {2.1}动态放大器的设计思想}{3}{subsection.6}%
-\contentsline {subsection}{\numberline {2.2}动态放大器基本机理}{3}{subsection.7}%
+\contentsline {subsection}{\numberline {2.2}动态放大器基本机理}{4}{subsection.7}%
 \contentsline {subsection}{\numberline {2.3}FIA：浮动反相放大器}{4}{subsection.9}%
 \contentsline {subsection}{\numberline {2.4}SEFIA：摆幅增强型 FIA}{5}{subsection.11}%
 \contentsline {subsection}{\numberline {2.5}LVFIA：低压浮动反相放大器}{6}{subsection.13}%
@@ -52,21 +52,21 @@
 \contentsline {section}{\numberline {3}所提出的动态放大器设计}{13}{section.46}%
 \contentsline {subsection}{\numberline {3.1}电路的拓扑设计}{13}{subsection.48}%
 \contentsline {subsection}{\numberline {3.2}增益提升}{14}{subsection.52}%
-\contentsline {subsection}{\numberline {3.3}线性度提升}{16}{subsection.59}%
+\contentsline {subsection}{\numberline {3.3}线性度提升}{17}{subsection.59}%
 \contentsline {subsection}{\numberline {3.4}设计变体}{17}{subsection.61}%
 \contentsline {section}{\numberline {4}电路设计和测试结果}{17}{section.62}%
 \contentsline {subsection}{\numberline {4.1}工艺库和参数设置}{17}{subsection.63}%
 \contentsline {subsection}{\numberline {4.2}电路增益}{18}{subsection.70}%
-\contentsline {subsection}{\numberline {4.3}线性度}{21}{subsection.77}%
-\contentsline {section}{\numberline {5}结论}{21}{section.79}%
-\contentsline {sectionnoid}{参考文献}{23}{section*.80}%
-\contentsline {sectionnoid}{附录}{25}{section*.81}%
-\contentsline {sectionnoid}{作者简历}{26}{section*.82}%
+\contentsline {subsection}{\numberline {4.3}线性度}{21}{subsection.78}%
+\contentsline {section}{\numberline {5}结论}{22}{section.80}%
+\contentsline {sectionnoid}{参考文献}{23}{section*.81}%
+\contentsline {sectionnoid}{附录}{25}{section*.82}%
+\contentsline {sectionnoid}{作者简历}{26}{section*.83}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {sectionnoiddot}{《本科生毕业论文（设计）任务书》}{27}{section*.83}%
+\contentsline {sectionnoiddot}{《本科生毕业论文（设计）任务书》}{27}{section*.84}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
-\contentsline {sectionnoiddot}{《本科生毕业论文（设计）考核表》}{29}{section*.84}%
+\contentsline {sectionnoiddot}{《本科生毕业论文（设计）考核表》}{29}{section*.85}%
 \gdef \the@ipfilectr {}
 \contentsfinish 
