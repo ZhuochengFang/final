@@ -1,0 +1,28 @@
+# Abbreviations normalization report
+
+- FIA: already has full term near doc_thesis\contents\04-1_Introduction.tex at pos 2144
+- CMOS: already has full term near doc_thesis\contents\04-2_MainBody.tex at pos 1833
+- ADC: already has full term near doc_thesis\contents\04-1_Introduction.tex at pos 1019
+- SEFIA: already has full term near doc_thesis\contents\04-2_MainBody.tex at pos 2488
+- PMOS: already has full term near doc_thesis\contents\04-2_MainBody.tex at pos 2717
+- NMOS: already has full term near doc_thesis\contents\04-2_MainBody.tex at pos 2774
+- CI: NOT FOUND in any .tex file
+- CRES: NOT FOUND in any .tex file
+- CL: NOT FOUND in any .tex file
+- VCM: already has full term near doc_thesis\contents\04-2_MainBody.tex at pos 3998
+- VDD: already has full term near doc_thesis\contents\04-2_MainBody.tex at pos 3937
+- VSS: already has full term near doc_thesis\contents\04-2_MainBody.tex at pos 3964
+- VGS: already has full term near doc_thesis\contents\04-2_MainBody.tex at pos 4029
+- CC1: NOT FOUND in any .tex file
+- CC2: NOT FOUND in any .tex file
+- VBP: NOT FOUND in any .tex file
+- VBN: NOT FOUND in any .tex file
+- LVFIA: already has full term near doc_thesis\contents\03_Abstract.tex at pos 306
+- SC: already has full term near doc_thesis\contents\04-2_MainBody.tex at pos 4832
+- OTA: already has full term near doc_thesis\contents\04-1_Introduction.tex at pos 372
+- SNDR: already has full term near doc_thesis\contents\04-1_Introduction.tex at pos 1112
+- MASH: already has full term near doc_thesis\contents\04-1_Introduction.tex at pos 1877
+- CR-CLS: already has full term near doc_thesis\contents\04-1_Introduction.tex at pos 2041
+- CLS: already has full term near doc_thesis\contents\03_Abstract.tex at pos 352
+- A0: NOT FOUND in any .tex file
+- CDC: annotated TODO in doc_thesis\contents\04-1_Introduction.tex line 34

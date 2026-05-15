@@ -1,0 +1,28 @@
+论文英文缩写清单
+
+- FIA: Floating Inverter Amplifier (FIA，浮动反相放大器). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L47)
+- CMOS: Complementary Metal–Oxide–Semiconductor (CMOS，互补金属氧化物半导体). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L54)
+- ADC: Analog-to-Digital Converter (ADC，模数转换器). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L13)
+- CDC: Capacitance-to-Digital Converter (CDC，电容-数字转换器) — 含义请确认（文中可能为 CDC 或 Charge-Domain Converter）. 首次出现: [doc_thesis/contents/04-1_Introduction.tex](doc_thesis/contents/04-1_Introduction.tex#L33)
+- SEFIA: Swing-Enhanced Floating Inverter Amplifier (SEFIA，摆幅增强型浮动反相放大器). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L74)
+- PMOS: P-channel Metal–Oxide–Semiconductor (PMOS，p沟道金属氧化物半导体). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L80)
+- NMOS: N-channel Metal–Oxide–Semiconductor (NMOS，n沟道金属氧化物半导体). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L80)
+- CI: (CI，浮空电容) — 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L84)
+- CRES: reserve capacitor (CRES，储能电容). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L108)
+- CL / C_L: load capacitance (C_L，负载电容). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L109)
+- VCM: common-mode voltage (VCM，共模电压). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L110)
+- VDD: VDD (positive supply，电源正极). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L113)
+- VSS: VSS (negative supply/ground，电源负极). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L113)
+- VGS: gate–source voltage (VGS，栅源电压). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L121)
+- CC1 / CC2: timing capacitors (CC1/CC2，时序/放电电容). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L119)
+- VBP / VBN: bias voltages (VBP/VBN，偏置电压). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L120)
+- LVFIA: Low-Voltage Floating Inverter Amplifier (LVFIA，低压浮动反相放大器). 首次出现: [doc_thesis/contents/03_Abstract.tex](doc_thesis/contents/03_Abstract.tex#L13)
+- SC: Switched-Capacitor (SC，开关电容). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L142)
+- OTA: Operational Transconductance Amplifier (OTA，运算跨导放大器). 首次出现: [doc_thesis/contents/04-1_Introduction.tex](doc_thesis/contents/04-1_Introduction.tex#L16)
+- SNDR: Signal-to-Noise-and-Distortion Ratio (SNDR，信噪失真比). 首次出现: [doc_thesis/contents/04-1_Introduction.tex](doc_thesis/contents/04-1_Introduction.tex#L33)
+- MASH: Multi-Stage Noise Shaping (MASH，多级噪声整形). 首次出现: [doc_thesis/contents/04-1_Introduction.tex](doc_thesis/contents/04-1_Introduction.tex#L57)
+- CR-CLS: Charge-Redistribution CLS (CR-CLS，电荷重分配 CLS). 首次出现: [doc_thesis/contents/04-1_Introduction.tex](doc_thesis/contents/04-1_Introduction.tex#L60)
+- CLS: Correlated Level Shifting (CLS，相关电平移位). 首次出现: [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L266)
+- A0: open-loop gain symbol (A0，开环增益) — 数学符号，见 [doc_thesis/contents/04-2_MainBody.tex](doc_thesis/contents/04-2_MainBody.tex#L195)
+
+注：我已在多处对首现写法做了英文全称优先的替换（例如 `FIA`/`SEFIA`/`LVFIA`/`CLS`/`OTA`/`ADC`/`SC` 等）。如需我继续把清单中其余缩写的首次出现位置统一替换，我会按清单逐项修改并提交补丁。

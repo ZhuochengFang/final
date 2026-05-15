@@ -36,11 +36,11 @@
 \contentsline {section}{\numberline {2}动态放大器与相关电平移位技术}{3}{section.5}%
 \contentsline {subsection}{\numberline {2.1}动态放大器的设计思想}{3}{subsection.6}%
 \contentsline {subsection}{\numberline {2.2}动态放大器基本机理}{4}{subsection.7}%
-\contentsline {subsection}{\numberline {2.3}FIA：浮动反相放大器}{4}{subsection.9}%
-\contentsline {subsection}{\numberline {2.4}SEFIA：摆幅增强型 FIA}{5}{subsection.11}%
-\contentsline {subsection}{\numberline {2.5}LVFIA：低压浮动反相放大器}{6}{subsection.13}%
-\contentsline {subsection}{\numberline {2.6}基于动态放大器的闭环SC积分器电路}{7}{subsection.17}%
-\contentsline {subsubsection}{\numberline {2.6.1}SC放大器的基本结构}{7}{subsubsection.18}%
+\contentsline {subsection}{\numberline {2.3}浮动反相放大器 (Floating Inverter Amplifier, FIA)}{4}{subsection.9}%
+\contentsline {subsection}{\numberline {2.4}摆幅增强型浮动反相放大器 (Swing-Enhanced Floating Inverter Amplifier, SEFIA)}{5}{subsection.11}%
+\contentsline {subsection}{\numberline {2.5}低压浮动反相放大器 (Low-Voltage Floating Inverter Amplifier, LVFIA)}{6}{subsection.13}%
+\contentsline {subsection}{\numberline {2.6}基于动态放大器的闭环SC积分器电路}{8}{subsection.17}%
+\contentsline {subsubsection}{\numberline {2.6.1}开关电容 (Switched-Capacitor, SC) 放大器的基本结构}{8}{subsubsection.18}%
 \contentsline {subsubsection}{\numberline {2.6.2}基于LVFIA的SC闭环放大器}{9}{subsubsection.24}%
 \contentsline {subsection}{\numberline {2.7}CLS技术及其在动态放大器中的作用}{11}{subsection.36}%
 \contentsline {subsubsection}{\numberline {2.7.1}CLS基本思想}{11}{subsubsection.37}%
@@ -49,24 +49,24 @@
 \contentsline {subsubsection}{\numberline {2.7.4}CLS变化}{13}{subsubsection.43}%
 \contentsline {subsubsection}{\numberline {2.7.5}CLS应用}{13}{subsubsection.44}%
 \contentsline {subsection}{\numberline {2.8}本研究的目的与定位}{13}{subsection.45}%
-\contentsline {section}{\numberline {3}所提出的动态放大器设计}{13}{section.46}%
-\contentsline {subsection}{\numberline {3.1}电路的拓扑设计}{13}{subsection.48}%
-\contentsline {subsection}{\numberline {3.2}增益提升}{14}{subsection.52}%
-\contentsline {subsection}{\numberline {3.3}线性度提升}{17}{subsection.59}%
-\contentsline {subsection}{\numberline {3.4}设计变体}{17}{subsection.61}%
-\contentsline {section}{\numberline {4}电路设计和测试结果}{17}{section.62}%
-\contentsline {subsection}{\numberline {4.1}工艺库和参数设置}{17}{subsection.63}%
-\contentsline {subsection}{\numberline {4.2}电路增益}{18}{subsection.70}%
+\contentsline {section}{\numberline {3}所提出的动态放大器设计}{14}{section.46}%
+\contentsline {subsection}{\numberline {3.1}电路的拓扑设计}{14}{subsection.48}%
+\contentsline {subsection}{\numberline {3.2}增益提升}{15}{subsection.53}%
+\contentsline {subsection}{\numberline {3.3}线性度提升}{17}{subsection.60}%
+\contentsline {subsection}{\numberline {3.4}设计变体}{18}{subsection.62}%
+\contentsline {section}{\numberline {4}电路设计和测试结果}{18}{section.63}%
+\contentsline {subsection}{\numberline {4.1}工艺库和参数设置}{18}{subsection.64}%
+\contentsline {subsection}{\numberline {4.2}电路增益}{19}{subsection.70}%
 \contentsline {subsection}{\numberline {4.3}线性度}{21}{subsection.78}%
-\contentsline {section}{\numberline {5}结论}{22}{section.80}%
-\contentsline {sectionnoid}{参考文献}{23}{section*.81}%
-\contentsline {sectionnoid}{附录}{25}{section*.82}%
-\contentsline {sectionnoid}{作者简历}{26}{section*.83}%
+\contentsline {section}{\numberline {5}结论}{23}{section.80}%
+\contentsline {sectionnoid}{参考文献}{25}{section*.81}%
+\contentsline {sectionnoid}{附录}{27}{section*.82}%
+\contentsline {sectionnoid}{作者简历}{28}{section*.83}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {sectionnoiddot}{《本科生毕业论文（设计）任务书》}{27}{section*.84}%
+\contentsline {sectionnoiddot}{《本科生毕业论文（设计）任务书》}{29}{section*.84}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
-\contentsline {sectionnoiddot}{《本科生毕业论文（设计）考核表》}{29}{section*.85}%
+\contentsline {sectionnoiddot}{《本科生毕业论文（设计）考核表》}{31}{section*.85}%
 \gdef \the@ipfilectr {}
 \contentsfinish 
