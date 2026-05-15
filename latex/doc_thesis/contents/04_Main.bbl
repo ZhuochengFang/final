@@ -1,4 +1,4 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -38,6 +38,53 @@ LI H, DU K, BAO Y, et~al.
 \newblock IEEE Journal of Solid-State Circuits, 2024, 59\allowbreak (2):
   435-448.
 \newblock DOI: \doi{10.1109/JSSC.2023.3307427}.
+
+\bibitem[Harrison et~al.(2003)Harrison and Charles]{harrison2003neuralamp}
+HARRISON R~R, CHARLES C.
+\newblock A low-power low-noise cmos amplifier for neural recording
+  applications\allowbreak[J/OL].
+\newblock IEEE Journal of Solid-State Circuits, 2003, 38\allowbreak (6):
+  958-965.
+\newblock DOI: \doi{10.1109/JSSC.2003.811979}.
+
+\bibitem[Chaya et~al.(2020)Chaya, Ghosh, Srinivas, and
+  Jain]{chaya2020ultralowota}
+CHAYA N, GHOSH A, SRINIVAS B, et~al.
+\newblock An ultra low power low noise operational transconductance amplifier
+  for biomedical front-end applications\allowbreak[C/OL]//\allowbreak
+2020 International Conference on Inventive Computation Technologies (ICICT).
+\newblock 2020: 1020-1023.
+\newblock DOI: \doi{10.1109/ICICT48043.2020.9112393}.
+
+\bibitem[Mukherjee et~al.(2022)Mukherjee, Pandit, and
+  Pal]{mukherjee2022ultralowia}
+MUKHERJEE K, PANDIT S, PAL R~K.
+\newblock An ultra-low power (86 nw) low-voltage (0.6 v) self-biased
+  instrumentation amplifier for bio-medical
+  applications\allowbreak[C/OL]//\allowbreak
+2022 IEEE International Conference of Electron Devices Society Kolkata Chapter
+  (EDKCON).
+\newblock 2022: 580-585.
+\newblock DOI: \doi{10.1109/EDKCON56221.2022.10032969}.
+
+\bibitem[Rajagopal et~al.(2023)Rajagopal and
+  Arora]{rajagopal2023subthresholdopamp}
+RAJAGOPAL R, ARORA P.
+\newblock Design of high gain, low power, subthreshold operation amplifier for
+  different node technologies and comparative
+  analysis\allowbreak[C/OL]//\allowbreak
+2023 Global Conference on Information Technologies and Communications (GCITC).
+\newblock 2023: 1-5.
+\newblock DOI: \doi{10.1109/GCITC60406.2023.10426549}.
+
+\bibitem[Tai et~al.(2006)Tai, Lai, and Chen]{tai2006bulkdrivenopamp}
+TAI C~F, LAI J~L, CHEN R~J.
+\newblock Using bulk-driven technology operate in subthreshold region to design
+  a low voltage and low current operational
+  amplifier\allowbreak[C/OL]//\allowbreak
+2006 IEEE International Symposium on Consumer Electronics.
+\newblock 2006: 1-5.
+\newblock DOI: \doi{10.1109/ISCE.2006.1689495}.
 
 \bibitem[Wang et~al.(2021)]{wang2021sefiamod}
 WANG X, et~al.

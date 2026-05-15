@@ -13,12 +13,14 @@
 功耗高精度接口电路设计成为集成电路研究中的重要方向
 \cite{tang2020zoomcdc,li2021humidityarray,li2024crcls}。
 
-在传统模拟前端中，静态偏置 OTA 长期承担积分、缓冲和放大任务。
+在传统模拟前端中，静态偏置运算跨导放大器（Operational Transconductance Amplifier, OTA）长期承担积分、缓冲和放大任务。
 这一路径在高性能场景下成熟可靠，
 但在低电压与超低功耗条件下面临明显挑战。第一，为获得高增益和高线性，通常需要较大偏置电流，
 导致待机与运行能耗偏高；第二先进工艺下晶体管本征增益下降，
 静态 OTA 维持高环路增益的代价进一步上升；第三，供电电压降低后，
 级联结构与信号摆幅受限，性能提升空间收窄。
+相关研究中，低噪声神经记录放大器、超低功耗生物前端 OTA、0.6V 自偏置仪表放大器以及亚阈值/体驱动运放等工作，
+也反映出静态放大路径在“增益-噪声-功耗”三者之间的长期折中关系\cite{harrison2003neuralamp,chaya2020ultralowota,mukherjee2022ultralowia,rajagopal2023subthresholdopamp,tai2006bulkdrivenopamp}。
 因而，“以持续静态电流换取精度”的传统模式，
 越来越难同时满足边缘传感系统对能效、面积和鲁棒性的综合要求。
 
@@ -26,10 +28,10 @@
 其核心思想是利用离散时间相位中的瞬态过程实现信号增益，而非全时偏置放大。
 对于低带宽传感读出、离散时间积分和噪声整形数据转换场景，
 这一机制天然契合“按需计算”的系统节奏。
-以近年的代表性工作为例：在低频高精度 ADC 中，
+以近年的代表性工作为例：在低频高精度模数转换器（Analog-to-Digital Converter, ADC）中，
 基于 floating-inverter 的动态放大路径可在微瓦级功耗下获得较高
-SNDR\cite{wang2021sefiamod,meng2023jssc_mash}；
-在 CDC 与湿度传感接口中，
+信噪失真比（Signal-to-Noise-and-Distortion Ratio, SNDR）\cite{wang2021sefiamod,meng2023jssc_mash}；
+在电容数字转换器（Capacitance-to-Digital Converter, CDC）与湿度传感接口中，
 动态放大器阵列与 zoom 架构协同可显著改善能效指标\cite{li2021humidityarray,tang2020zoomcdc}。
 这些结果说明，动态放大器不仅是“替代 OTA 的局部电路技巧”，
 更是面向低功耗系统架构优化的关键支点。
@@ -52,11 +54,11 @@ SNDR\cite{wang2021sefiamod,meng2023jssc_mash}；
 CLS 的核心是在相关时钟相位内执行受控电平重定位，
 使部分误差项在后续处理中具备可抑制性，
 从而改善低压条件下的有效增益与线性。
-已有工作表明，CLS 可在离散时间 MASH ADC、inverter-based OTA
+已有工作表明，CLS 可在离散时间多级噪声整形（Multi-stAge noise SHaping, MASH）ADC、inverter-based OTA
 以及传感 CDC 前端中带来可观收益
 \cite{hu2022mashcls,meng2023jssc_mash,liu2020pingpongcls,li2024crcls}。
 其中，面向湿度传感的 CR-CLS（Charge-Redistribution CLS）
-进一步展示了“电荷重分配 + 相关电平移位 + FIA + Zoom CDC”的跨层协同潜力，
+进一步展示了“电荷重分配 + 相关电平移位 + 浮动反相放大器（Floating Inverter Amplifier, FIA） + Zoom CDC”的跨层协同潜力，
 为低功耗高精度传感读出提供了新的实现路径\cite{li2024crcls}.
 
 从应用需求看，未来大量边缘节点并不追求最高采样速率，
