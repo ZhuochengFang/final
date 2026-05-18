@@ -54,6 +54,7 @@
 \RequirePackage{xfp}
 \RequirePackage{multido}
 \RequirePackage{makecell}
+\RequirePackage{diagbox}
 %-----------------------------------------------------------------
 % format settings
 %-----------------------------------------------------------------
