@@ -35,7 +35,13 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--out",
         type=Path,
-        default=Path(__file__).with_name("vc1_time_plot.png"),
+        default=(
+            Path(__file__).resolve().parent.parent
+            / "doc_thesis"
+            / "figs"
+            / "04"
+            / "vc1_time_plot.png"
+        ),
         help="Output image path",
     )
     return parser
