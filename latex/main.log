@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.7)  18 MAY 2026 11:07
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.2.7)  18 MAY 2026 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -872,11 +872,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 ))
 (./main.aux (./doc_thesis/contents/01_Statement.aux)
 (./doc_thesis/contents/02_Acknowledgments.aux)
-(./doc_thesis/contents/03_Abstract.aux) (./doc_thesis/contents/04_Main.aux
-
-LaTeX Warning: Label `tab:CLS电路闭环增益' multiply defined.
-
-) (./doc_thesis/contents/05_Task.aux) (./doc_thesis/contents/06_Eval.aux))
+(./doc_thesis/contents/03_Abstract.aux) (./doc_thesis/contents/04_Main.aux)
+(./doc_thesis/contents/05_Task.aux) (./doc_thesis/contents/06_Eval.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -1237,21 +1234,20 @@ File: doc_thesis/figs/04/CLS阶段1.png Graphic file (type bmp)
 File: doc_thesis/figs/04/CLS阶段2.png Graphic file (type bmp)
 <doc_thesis/figs/04/CLS阶段2.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [12]
+
+[13]
 File: doc_thesis/figs/04/the_proposed_circuit.png Graphic file (type bmp)
 <doc_thesis/figs/04/the_proposed_circuit.png>
 
 
-[13]
+[14]
 File: doc_thesis/figs/04/时序图.png Graphic file (type bmp)
 <doc_thesis/figs/04/时序图.png>
 
 
-[14]
+[15]
 File: doc_thesis/figs/04/复位.png Graphic file (type bmp)
 <doc_thesis/figs/04/复位.png>
 File: doc_thesis/figs/04/初步放大.png Graphic file (type bmp)
@@ -1260,11 +1256,12 @@ File: doc_thesis/figs/04/电平移位.png Graphic file (type bmp)
 <doc_thesis/figs/04/电平移位.png>
 
 
-[15]
-
 [16]
 File: doc_thesis/figs/04/CLS过程电平变化.png Graphic file (type bmp)
 <doc_thesis/figs/04/CLS过程电平变化.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 [17]
@@ -1273,43 +1270,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [18]
+Underfull \vbox (badness 4647) has occurred while \output is active []
+
+
+
+[19]
 File: doc_thesis/figs/04/LVFIA_schematic.png Graphic file (type bmp)
 <doc_thesis/figs/04/LVFIA_schematic.png>
 File: doc_thesis/figs/04/LVFIA_model.png Graphic file (type bmp)
 <doc_thesis/figs/04/LVFIA_model.png>
 File: doc_thesis/figs/04/模拟开关.png Graphic file (type bmp)
 <doc_thesis/figs/04/模拟开关.png>
-
-
-[19]
-
-[20]
 File: doc_thesis/figs/04/应用CLS之后等效增益的计算方法.png Graphic file (type bmp)
 <doc_thesis/figs/04/应用CLS之后等效增益的计算方法.png>
 
-Underfull \vbox (badness 3386) has occurred while \output is active []
+
+[20]
+
+[21]) (./doc_thesis/contents/04-3_Conclution.tex
+Underfull \vbox (badness 2035) has occurred while \output is active []
 
 
 
-[21]
-File: doc_thesis/figs/04/pvt_open_loop_gain.png Graphic file (type bmp)
-<doc_thesis/figs/04/pvt_open_loop_gain.png>
-File: doc_thesis/figs/04/cls_closed_loop_gain.png Graphic file (type bmp)
-<doc_thesis/figs/04/cls_closed_loop_gain.png>
-File: doc_thesis/figs/04/瞬态仿真下有无CLS对比.png Graphic file (type bmp)
-<doc_thesis/figs/04/瞬态仿真下有无CLS对比.png>
+[22]) (./doc_thesis/contents/04-4_Appendix.tex
 
+[23]
 
-[22]
+[24
 
-[23]) (./doc_thesis/contents/04-3_Conclution.tex)
-(./doc_thesis/contents/04-4_Appendix.tex
+] (./doc_thesis/contents/04_Main.bbl
 
-[24] (./doc_thesis/contents/04_Main.bbl
-
-[25
-
-])
+[25])
 
 [26]
 
@@ -1356,18 +1347,14 @@ Overfull \hbox (4.80602pt too wide) in paragraph at lines 28--39
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0BDA1495B884CA98EE8FE91E687A8C67;1389.
+(rerunfilecheck)             Checksum: 486DEC927C20CBAA6FBFE01880668756;1389.
  ) 
 Here is how much of TeX's memory you used:
- 23168 strings out of 473832
- 510611 string characters out of 5733159
- 896595 words of memory out of 5000000
- 45729 multiletter control sequences out of 15000+600000
+ 23138 strings out of 473832
+ 509392 string characters out of 5733159
+ 896424 words of memory out of 5000000
+ 45702 multiletter control sequences out of 15000+600000
  573523 words of font info for 156 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,18n,125p,1225b,726s stack positions out of 10000i,1000n,20000p,200000b,200000s
